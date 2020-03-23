@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_gravity="center"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="4dp"
+    android:background="@color/cardview_light_background"
+    card_view:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/layout_hariTanggal"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+
+            android:background="@android:color/holo_red_dark"
+            android:orientation="vertical"
+            android:padding="1dp">
+
+            <TextView
+                android:id="@+id/deadline_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="4dp"
+
+                android:textColor="@color/cardview_light_background"
+                tools:text="Hari" />
+
+            <Button
+                android:id="@+id/remove_button"
+                android:layout_width="101dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="Remove" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="247dp"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/layout_hariTanggal"
+            android:padding="1dp">
+
+            <LinearLayout
+                android:id="@+id/layout_pengeluaran_pendapatan"
+                android:layout_width="230dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:id="@+id/layout_pengeluaran"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/darker_gray"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/deadline_name"
+                        android:layout_width="202dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+
+                        android:textSize="14sp"
+                        tools:text="Title" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_pendapatan"
+                    android:layout_width="230dp"
+                    android:layout_height="59dp"
+                    android:layout_below="@+id/layout_pengeluaran"
+                    android:background="@android:color/darker_gray"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/deadline_details"
+                        android:layout_width="207dp"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="10dp"
+
+                        android:textColor="@color/cardview_light_background" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
